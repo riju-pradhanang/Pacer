@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+httpx 
+sqlalchemy[asyncio]
+asyncpg 
+alembic 
+redis 
+pydantic-settings 
+pydantic[email]
+structlog 
+prometheus-client 
+pyjwt 
+argon2-cffi
