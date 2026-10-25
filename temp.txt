@@ -1,8 +1,0 @@
-mkdir pacer && cd pacer
-git init
-uv init --app --python 3.12 --name pacer
-uv add fastapi 'uvicorn[standard]' httpx 'sqlalchemy[asyncio]' asyncpg alembic redis pydantic-settings 'pydantic[email]' structlog prometheus-client pyjwt argon2-cffi
-uv add --dev pytest pytest-asyncio 'testcontainers[postgres,redis]' hypothesis ruff mypy asgi-lifespan
-mkdir -p app/core app/models app/control app/gateway app/limiter app/worker tests/unit tests/integration docs/adr
-touch app/__init__.py app/core/__init__.py app/models/__init__.py app/control/__init__.py app/gateway/__init__.py app/limiter/__init__.py app/worker/__init__.py
-rm -f main.py
