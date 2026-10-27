@@ -1,3 +1,4 @@
+# tests/unit/test_settings.py
 import pytest
 from pydantic import ValidationError
 
